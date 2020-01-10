@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+  
+
+    
+</style>
+</head>
+<body style="background-color:black;">
+
+    <h1><font color="white">Video Kiosk</font></h1>
+
+    <h4><font color="white">Please select a video</font></h4>
+   
+<div class="grid-container">
+ 
+<div>
+    <video id="myVideo" width="320" height="240" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+</video>
+    </div>
+  
+  <div>
+     <video width="320" height="240" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+          </div>
+      
+  <div>
+      <video width="320" height="240" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+          </div>  
+      
+  <div>
+      <video width="360" height="270" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+          </div>
+      
+  <div>
+      <video width="360" height="270" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+          </div>
+      
+ <div>
+      <video width="360" height="270" poster="1.JPG" controls requestFullscreen>
+  <source src="cactus.mp4" type="video/mp4">
+          </div>
+
+  <script>
+var video = document.querySelector('video');       
+video.addEventListener('ended', function() {
+  video.load();     
+});
+</script>
+     
+ <script>
+     var video = document.querySelector('video');
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+} else if (elem.msRequestFullscreen) {
+  elem.msRequestFullscreen();
+} else if (elem.mozRequestFullScreen) {
+  elem.mozRequestFullScreen();
+} else if (elem.webkitRequestFullscreen) {
+  elem.webkitRequestFullscreen();
+}
+</script>     
+     
+ 
+</div>
+</body>
+</html>
+
