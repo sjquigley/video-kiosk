@@ -1,4 +1,4 @@
-# video-kiosk
+# video-kiosk-version1
 Video Kiosk
 
 
@@ -6,6 +6,7 @@ This is the video kiosk designed to play videos. It starts on a poster image and
 
 See version 2 to opening new windows. 
 
+Anticopyright, peace and love only. 
 
 Best of luck,
 
